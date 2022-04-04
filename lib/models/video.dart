@@ -51,11 +51,11 @@ class Video {
       likes: snapshot['likes'],
       commentCount: snapshot['commentCount'],
       shareCount: snapshot['shareCount'],
-      songName: snapshot['songName'],
-      caption: snapshot['caption'],
+      songName: snapshot['songName'] ?? "song name",
+      caption: snapshot['caption'] ?? "asdasd",
       videoUrl: snapshot['videoUrl'],
       profilePhoto: snapshot['profilePhoto'],
-      thumbnail: snapshot['thumbnail'],
+      thumbnail: snapshot['thumbnail'] ?? "asdad",
     );
   }
 }
